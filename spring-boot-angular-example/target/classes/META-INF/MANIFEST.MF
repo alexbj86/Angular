@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: spring-boot-angular-example
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: alessandro
+Built-By: admin
 Implementation-Vendor-Id: com.mydevgeek
-Build-Jdk: 1.8.0_151
+Build-Jdk: 1.8.0_101
 Implementation-URL: http://projects.spring.io/spring-boot/spring-boot-
  angular-example/
 Created-By: Maven Integration for Eclipse
