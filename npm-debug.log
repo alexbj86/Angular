@@ -1,0 +1,161 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/alessandro/git/angular/.metadata/.plugins/ts.eclipse.ide.server.nodejs.embed.linux.gtk.x86_64/node-v6.9.4-linux-x64/bin/node',
+1 verbose cli   '/home/alessandro/git/angular/.metadata/.plugins/ts.eclipse.ide.server.nodejs.embed.linux.gtk.x86_64/node-v6.9.4-linux-x64/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'tslint-language-service' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose config Skipping project config: /home/alessandro/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData tslint-language-service
+9 silly fetchNamedPackageData tslint-language-service
+10 silly mapToRegistry name tslint-language-service
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'tslint-language-service',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'tslint-language-service',
+13 silly mapToRegistry   name: 'tslint-language-service',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/tslint-language-service
+15 verbose request uri https://registry.npmjs.org/tslint-language-service
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 15:20:15
+18 verbose request id 56654da228026ce5
+19 verbose etag "5a246204-72f0"
+20 verbose lastModified Sun, 3 Dec 2017 20:43:48 GMT
+21 http request GET https://registry.npmjs.org/tslint-language-service
+22 http 304 https://registry.npmjs.org/tslint-language-service
+23 verbose headers { date: 'Sat, 30 Dec 2017 14:20:16 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   etag: '"5a246204-72f0"',
+23 verbose headers   age: '9902',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-hhn1529-HHN',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '1',
+23 verbose headers   'x-timer': 'S1514643617.724807,VS0,VE1',
+23 verbose headers   vary: 'Accept-Encoding, Accept' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Sat, 30 Dec 2017 14:20:16 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     etag: '"5a246204-72f0"',
+24 silly get     age: '9902',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-hhn1529-HHN',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1514643617.724807,VS0,VE1',
+24 silly get     vary: 'Accept-Encoding, Accept' } ]
+25 verbose etag https://registry.npmjs.org/tslint-language-service from cache
+26 verbose get saving tslint-language-service to /home/alessandro/.npm/registry.npmjs.org/tslint-language-service/.cache.json
+27 verbose correctMkdir /home/alessandro/.npm correctMkdir not in flight; initializing
+28 silly install normalizeTree
+29 silly loadCurrentTree Finishing
+30 silly loadIdealTree Starting
+31 silly install loadIdealTree
+32 silly cloneCurrentTree Starting
+33 silly install cloneCurrentTreeToIdealTree
+34 silly cloneCurrentTree Finishing
+35 silly loadShrinkwrap Starting
+36 silly install loadShrinkwrap
+37 silly loadShrinkwrap Finishing
+38 silly loadAllDepsIntoIdealTree Starting
+39 silly install loadAllDepsIntoIdealTree
+40 silly resolveWithNewModule tslint-language-service@0.9.7 checking installable status
+41 silly cache add args [ 'tslint-language-service', null ]
+42 verbose cache add spec tslint-language-service
+43 silly cache add parsed spec Result {
+43 silly cache add   raw: 'tslint-language-service',
+43 silly cache add   scope: null,
+43 silly cache add   escapedName: 'tslint-language-service',
+43 silly cache add   name: 'tslint-language-service',
+43 silly cache add   rawSpec: '',
+43 silly cache add   spec: 'latest',
+43 silly cache add   type: 'tag' }
+44 silly addNamed tslint-language-service@latest
+45 verbose addNamed "latest" is being treated as a dist-tag for tslint-language-service
+46 info addNameTag [ 'tslint-language-service', 'latest' ]
+47 silly mapToRegistry name tslint-language-service
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: 'tslint-language-service',
+50 silly mapToRegistry   scope: null,
+50 silly mapToRegistry   escapedName: 'tslint-language-service',
+50 silly mapToRegistry   name: 'tslint-language-service',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri https://registry.npmjs.org/tslint-language-service
+52 verbose addNameTag registry:https://registry.npmjs.org/tslint-language-service not in flight; fetching
+53 verbose get https://registry.npmjs.org/tslint-language-service not expired, no request
+54 silly addNameTag next cb for tslint-language-service with tag latest
+55 silly addNamed tslint-language-service@0.9.7
+56 verbose addNamed "0.9.7" is a plain semver version for tslint-language-service
+57 silly cache afterAdd tslint-language-service@0.9.7
+58 verbose afterAdd /home/alessandro/.npm/tslint-language-service/0.9.7/package/package.json not in flight; writing
+59 verbose correctMkdir /home/alessandro/.npm correctMkdir not in flight; initializing
+60 verbose afterAdd /home/alessandro/.npm/tslint-language-service/0.9.7/package/package.json written
+61 silly loadAllDepsIntoIdealTree Finishing
+62 silly loadIdealTree Finishing
+63 silly currentTree alessandro
+64 silly idealTree alessandro
+64 silly idealTree └── tslint-language-service@0.9.7
+65 silly generateActionsToTake Starting
+66 silly install generateActionsToTake
+67 warn checkPermissions Missing write access to /home/alessandro/node_modules
+68 silly rollbackFailedOptional Starting
+69 silly rollbackFailedOptional Finishing
+70 silly runTopLevelLifecycles Finishing
+71 silly install printInstalled
+72 warn enoent ENOENT: no such file or directory, open '/home/alessandro/package.json'
+73 verbose enoent ENOENT: no such file or directory, open '/home/alessandro/package.json'
+73 verbose enoent This is most likely not a problem with npm itself
+73 verbose enoent and is related to npm not being able to find a file.
+74 warn tslint-language-service@0.9.7 requires a peer of typescript@>= 2.3.1 < 3 but none was installed.
+75 verbose If you need help, you may report this error at:
+75 verbose     <https://github.com/npm/npm/issues>
+76 warn tslint-language-service@0.9.7 requires a peer of tslint@>= 4 < 6 but none was installed.
+77 verbose If you need help, you may report this error at:
+77 verbose     <https://github.com/npm/npm/issues>
+78 warn alessandro No description
+79 verbose If you need help, you may report this error at:
+79 verbose     <https://github.com/npm/npm/issues>
+80 warn alessandro No repository field.
+81 verbose If you need help, you may report this error at:
+81 verbose     <https://github.com/npm/npm/issues>
+82 warn alessandro No README data
+83 verbose If you need help, you may report this error at:
+83 verbose     <https://github.com/npm/npm/issues>
+84 warn alessandro No license field.
+85 verbose If you need help, you may report this error at:
+85 verbose     <https://github.com/npm/npm/issues>
+86 verbose stack Error: EACCES: permission denied, access '/home/alessandro/node_modules'
+86 verbose stack     at Error (native)
+87 verbose cwd /home/alessandro/git/angular
+88 error Linux 4.14.0-041400-generic
+89 error argv "/home/alessandro/git/angular/.metadata/.plugins/ts.eclipse.ide.server.nodejs.embed.linux.gtk.x86_64/node-v6.9.4-linux-x64/bin/node" "/home/alessandro/git/angular/.metadata/.plugins/ts.eclipse.ide.server.nodejs.embed.linux.gtk.x86_64/node-v6.9.4-linux-x64/bin/npm" "install" "tslint-language-service"
+90 error node v6.9.4
+91 error npm  v3.10.10
+92 error path /home/alessandro/node_modules
+93 error code EACCES
+94 error errno -13
+95 error syscall access
+96 error Error: EACCES: permission denied, access '/home/alessandro/node_modules'
+96 error     at Error (native)
+96 error  { Error: EACCES: permission denied, access '/home/alessandro/node_modules'
+96 error     at Error (native)
+96 error   errno: -13,
+96 error   code: 'EACCES',
+96 error   syscall: 'access',
+96 error   path: '/home/alessandro/node_modules' }
+97 error Please try running this command again as root/Administrator.
+98 verbose exit [ -13, true ]
