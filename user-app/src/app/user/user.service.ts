@@ -39,8 +39,8 @@ export class UserService {
 
   deleteUserById(id: number): Observable<boolean> {
       return this.http.delete(this.apiUrl + '/' + id)
-        .map((res:Response) => res.json())
-        .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+        .map((res: Response) => res.json())
+        .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
     }
 
 }
