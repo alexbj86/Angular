@@ -10,7 +10,7 @@ import { Customer } from '../customer';
   styleUrls: ['./customers-list.component.css']
 })
 export class CustomersListComponent implements OnInit {
-  
+
 
   customers: Observable<Customer[]>;
 
@@ -18,6 +18,14 @@ export class CustomersListComponent implements OnInit {
 
   ngOnInit() {
     this.reloadData();
+  }
+
+  deleteCustomers() {
+    this.customerService.deleteAll().subscribe(data => {
+                                               console.log(data);
+                                               this.reloadData();
+                                              },
+                                            error => console.log('ERROR: ' + error));
   }
 
   reloadData() {
