@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
 nodeJSEmbedded=node-v6.9.4-linux-x64
+typeScriptBuildPath={}
 useNodeJSEmbedded=true
