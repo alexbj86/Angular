@@ -1,7 +1,6 @@
 export class Customer {
-
-    id: string;
-    name: string;
-    age: number;
-    active: boolean;
+  id: string;
+  name: string;
+  age: number;
+  active: boolean;
 }

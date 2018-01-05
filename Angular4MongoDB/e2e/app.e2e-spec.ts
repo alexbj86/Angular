@@ -1,14 +1,16 @@
-import { AppPage } from './app.po';
+import { Angular4MongoDBPage } from './app.po';
 
-describe('angular4-mongo-db App', () => {
-  let page: AppPage;
+describe('angular4-mongodb App', () => {
+  let page: Angular4MongoDBPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new Angular4MongoDBPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display welcome message', done => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    page.getParagraphText()
+      .then(msg => expect(msg).toEqual('Welcome to app!!'))
+      .then(done, done.fail);
   });
 });

@@ -5,7 +5,7 @@ import { Customer } from '../customer';
 import { CustomerService } from '../customer.service';
 
 @Component({
-  selector: 'app-create-customer',
+  selector: 'create-customer',
   templateUrl: './create-customer.component.html',
   styleUrls: ['./create-customer.component.css']
 })
@@ -25,12 +25,13 @@ export class CreateCustomerComponent implements OnInit {
   }
 
   save() {
-      this.customerService.createCustomer(this.customer).subscribe(data => console.log(data),  error => console.log(error));
-      this.customer = new Customer();
+    this.customerService.createCustomer(this.customer)
+      .subscribe(data => console.log(data), error => console.log(error));
+    this.customer = new Customer();
   }
 
   onSubmit() {
-    this.submitted = false;
+    this.submitted = true;
     this.save();
   }
 }

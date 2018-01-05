@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-
 import { AppComponent } from './app.component';
 
 import { CustomersListComponent } from './customers/customers-list/customers-list.component';
@@ -29,4 +28,5 @@ import { CustomerService } from './customers/customer.service';
   providers: [CustomerService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
