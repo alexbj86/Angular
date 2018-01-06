@@ -7,7 +7,7 @@ import { RouterModule, Routes} from '@angular/router';
 const routes: Routes = [
   {path: '', redirectTo: '/customer', pathMatch: 'full' },
   {path: 'detail/:id', component: CustomerDetailsComponent},
-  {path: 'customer', component: CustomersComponent}
+  {path: 'jsa/customer', component: CustomersComponent}
 ];
 
 @NgModule({

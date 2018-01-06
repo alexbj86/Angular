@@ -3,7 +3,7 @@ import { Customer } from '../customer';
 import { DataService } from '../data.service';
 
 @Component({
-    selector: 'app-customers',
+    selector: 'app-root',
     templateUrl: './customers.component.html',
     styleUrls: ['./customers.component.css']
 })
@@ -16,8 +16,8 @@ export class CustomersComponent implements OnInit {
     getCustomers() {
         return this.dataService.getCustomers().then(customers => this.customers = customers);
      }
-
-    ngOnInit(): void {
+    
+     ngOnInit(): void {
         this.getCustomers();
      }
 
