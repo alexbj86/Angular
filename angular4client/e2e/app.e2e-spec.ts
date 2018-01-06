@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { Angular4clientPage } from './app.po';
 
 describe('angular4client App', () => {
-  let page: AppPage;
+  let page: Angular4clientPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new Angular4clientPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
