@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 
+import { DataService } from './data.service';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,7 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
