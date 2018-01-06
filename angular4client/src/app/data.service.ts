@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
+import { ActivatedRoute, Params} from '@angular/router';
+import { Location } from '@angular/common';
+
 import 'rxjs/add/operator/toPromise';
 
 import { Customer } from './customer';
@@ -19,9 +22,17 @@ export class DataService {
                .then(response => response.json() as Customer[])
                .catch(this.handleError);
   }
+  
+  getCustomer(id: number): Promise<Customer> {
+      const url = `${this.customersUrl}/${id}`;
+      return this.http.get(url)
+                      .toPromise()
+                      .then(response => response.json() as Customer)
+                      .catch(this.handleError);
+  }
 
   private handleError(error: any): Promise<any> {
-    console.error('Error', error); // for demo purposes only
+    console.error('Error', error); 
     return Promise.reject(error.message || error);
   }
 }

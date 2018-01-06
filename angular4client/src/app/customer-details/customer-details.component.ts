@@ -1,8 +1,13 @@
-
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Customer } from '../customer';
 import { DataService } from '../data.service';
+
+import { ActivatedRoute, Params } from '@angular/router';
+
+import { Location } from '@angular/common';
+
+import 'rxjs/add/operator/switchMap';
 
 import { enableProdMode } from '@angular/core';
 enableProdMode();
@@ -11,9 +16,22 @@ enableProdMode();
   selector: 'customer-detail',
   templateUrl: './customer-details.component.html',
   styleUrls: ['./customer-details.component.css'],
-  providers: [DataService]
 })
-export class CustomerDetailsComponent {
+export class CustomerDetailsComponent implements OnInit{
 
-  @Input() customer: Customer;
+  customer: Customer;
+  
+  constructor(private dataService: DataService,
+              private route: ActivatedRoute, 
+              private location: Location) {}
+  
+  ngOnInit(): void {
+      this.route.params
+                .switchMap((params: Params) => this.dataService.getCustomer(+params['id']))
+                .subscribe(customer => this.customer = customer);
+  }
+  
+  goBack(): void {
+      this.location.back();
+  }
 }

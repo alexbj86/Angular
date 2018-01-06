@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -31,5 +32,10 @@ public class WebController {
 									.map(entry ->entry.getValue())
 									.collect(Collectors.toList());
 		return results;
+	}
+	
+	@GetMapping(value = "/customer/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Customer getCustomer(@PathVariable int id) {
+		return this.customers.get(id);
 	}
 }
