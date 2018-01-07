@@ -12,6 +12,10 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "plugins": [
+  			{ "name": "tslint-language-service"}, 
+  			{ "name": "@angular/language-service"}
+  	],
     "lib": [
       "es2016",
       "dom"
