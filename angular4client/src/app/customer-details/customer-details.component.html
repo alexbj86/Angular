@@ -1,4 +1,39 @@
-<div *ngIf="customer">
+<h3>Edit Customer Form</h3>
+<div [hidden]="submitted">
+	<form (ngSubmit)="onSubmit()">
+		<div class="form-group">
+			<label for="firstname">First Name</label>
+			<input type="text" class="form-control" id="firstname" required [(ngModel)]="customer.firstname" name="firstname">
+		</div>
+		
+		<div class="form-group">
+			<label for="lastname">Last Name</label>
+			<input type="text" class="form-control" id="lastname" required [(ngModel)]="customer.lastname" name="lastname">
+		</div>
+		
+		<div class="form-group">
+			<label for="ages">Age</label>
+			<input type="text" class="form-control" id="ages" required [(ngModel)]="customer.age" name="age">
+		</div>
+		
+		<div class="btn-group">
+			<button class="btn btn-primary" (click)="goBack()">Back</button>
+			<button type="submit" class="btn btn-success">Update</button>
+			<button class="btn btn-danger" (click)="delete()">Delete</button>
+		</div>
+		
+	</form>
+</div>
+
+<div [hidden]="!submitted">
+	<h4>Update successfully!</h4>
+	<div class="btn-group">
+		<button class="btn btn-primary" (click)="goBack()">Back</button>
+		<button class="btn btn-success" (click)="submitted=false">Edit</button>
+	</div>
+</div>
+
+<!-- <div *ngIf="customer">
 	<h4>{{customer.firstname}} details!</h4>
 	<div>
 		<label>id: </label>{{customer.id}}
@@ -14,4 +49,4 @@
 	</div>
 </div>
 
-<button (click)="goBack()">Back</button>
+<button (click)="goBack()">Back</button> -->

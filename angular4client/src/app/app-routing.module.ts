@@ -2,12 +2,14 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 import { CustomersComponent } from './customers/customers.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
+import { CreateCustomerComponent } from './create-customer/create-customer.component';
 
 
 const routes: Routes = [
   {path: '', redirectTo: '/customer', pathMatch: 'full' },
   {path: 'detail/:id', component: CustomerDetailsComponent},
-  {path: 'jsa/customer', component: CustomersComponent}
+  {path: 'customer', component: CustomersComponent},
+  {path: 'add', component: CreateCustomerComponent}
 ];
 
 @NgModule({

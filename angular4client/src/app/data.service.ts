@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Headers } from '@angular/http';
 
 import { ActivatedRoute, Params} from '@angular/router';
 import { Location } from '@angular/common';
@@ -12,6 +12,7 @@ import { Customer } from './customer';
 export class DataService {
 
   private customersUrl = 'api/customer';  // URL to web API
+  private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) { }
 
@@ -22,7 +23,7 @@ export class DataService {
                .then(response => response.json() as Customer[])
                .catch(this.handleError);
   }
-  
+
   getCustomer(id: number): Promise<Customer> {
       const url = `${this.customersUrl}/${id}`;
       return this.http.get(url)
@@ -31,8 +32,29 @@ export class DataService {
                       .catch(this.handleError);
   }
 
+  create(customer: Customer): Promise<Customer> {
+      return this.http
+        .post(this.customersUrl, JSON.stringify(customer), {headers: this.headers})
+        .toPromise()
+        .then(res => res.json() as Customer)
+        .catch(this.handleError);
+    }
+
+  update(customer: Customer): Promise<Customer> {
+      const url = `${this.customersUrl}/${customer.id}`;
+      return this.http.put(url, JSON.stringify(customer), {headers: this.headers})
+                      .toPromise()
+                      .then(() => customer)
+                      .catch(this.handleError);
+  }
+
+  delete(id: number): Promise<void> {
+      const url = `${this.customersUrl}/${id}`;
+      return this.http.delete(url, {headers: this.headers}).toPromise().then(() => null).catch(this.handleError);
+  }
+
   private handleError(error: any): Promise<any> {
-    console.error('Error', error); 
+    console.error('Error', error);
     return Promise.reject(error.message || error);
   }
 }

@@ -9,12 +9,14 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 
 import { DataService } from './data.service';
 import { CustomersComponent } from './customers/customers.component';
+import { CreateCustomerComponent } from './create-customer/create-customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerDetailsComponent,
-    CustomersComponent
+    CustomersComponent,
+    CreateCustomerComponent
   ],
   imports: [
     BrowserModule,
