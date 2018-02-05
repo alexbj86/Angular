@@ -1,5 +1,7 @@
 package com.concretepage.service;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +17,16 @@ public class ArticleService implements IArticleService {
 
 	@Override
 	public List<Article> getAllArticles() {
-		return articleDAO.getAllArticles();
+		List<Article> allArticles = articleDAO.getAllArticles();
+		Collections.sort(allArticles, new Comparator<Article>() {
+
+			@Override
+			public int compare(Article o1, Article o2) {
+				return o1.getArticleId().compareTo(o2.getArticleId());
+			}
+		});
+		
+		return allArticles;
 	}
 
 	@Override

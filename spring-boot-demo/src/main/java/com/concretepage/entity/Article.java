@@ -18,7 +18,7 @@ public class Article implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="article_id")
-	private int articleId;
+	private Integer articleId;
 	
 	@Column(name="title")
 	private String title;
@@ -26,11 +26,11 @@ public class Article implements Serializable {
 	@Column(name="category")
 	private String category;
 
-	public int getArticleId() {
+	public Integer getArticleId() {
 		return articleId;
 	}
 
-	public void setArticleId(int articleId) {
+	public void setArticleId(Integer articleId) {
 		this.articleId = articleId;
 	}
 
