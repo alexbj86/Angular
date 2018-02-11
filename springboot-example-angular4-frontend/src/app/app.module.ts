@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { UserApiService } from './services/user-api.service';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { HttpModule } from '@angular/http';
 
@@ -16,7 +17,7 @@ import { HttpModule } from '@angular/http';
     BrowserModule,
     HttpModule
   ],
-  providers: [],
+  providers: [UserApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
