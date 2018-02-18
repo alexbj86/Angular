@@ -10,15 +10,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PersonalComponent } from './personal/personal.component';
 import { WorkComponent } from './work/work.component';
 import { AddressComponent } from './address/address.component';
-import { ResultComponent } from './result/result.component';
+import { ResultComponent } from './result/result.component;
 
 /*Routing Module*/
 import { AppRoutingModule } from './app-routing.module';
 
 /*Shared Service*/
 import { FormDataService } from './data/formData.service';
-import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
-import { WorkComponent } from './work/work.component';
 
 
 @NgModule({
@@ -28,9 +26,7 @@ import { WorkComponent } from './work/work.component';
     PersonalComponent,
     WorkComponent,
     AddressComponent,
-    ResultComponent,
-    NavbarComponentComponent,
-    WorkComponent
+    ResultComponent
 ],
   imports: [
     BrowserModule,
