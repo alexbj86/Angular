@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 /*Shared Service*/
 import { FormDataService } from './data/formData.service';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
+import { WorkComponent } from './work/work.component';
 
 
 @NgModule({
@@ -28,8 +29,9 @@ import { NavbarComponentComponent } from './navbar-component/navbar-component.co
     WorkComponent,
     AddressComponent,
     ResultComponent,
-    NavbarComponentComponent
-  ],
+    NavbarComponentComponent,
+    WorkComponent
+],
   imports: [
     BrowserModule,
     FormsModule,
