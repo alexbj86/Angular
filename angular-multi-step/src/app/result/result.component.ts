@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { FormData } from '../data/formData.model';
+import { FormDataService } from '../data/formData.service';
+
 
 @Component({
-  selector: 'app-result',
-  templateUrl: './result.component.html',
-  styleUrls: ['./result.component.css']
+  selector: 'mt-wizard-result',
+  templateUrl: './result.component.html'
 })
 export class ResultComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  title = 'Thanks for staying tuned!';
+  @Input() formData: FormData;
+  isFormValid: boolean = false;
+  constructor(private formDataService: FormDataService) {
   }
 
+  ngOnInit() {
+    this.formData = this.formDataService.getFormData();
+    this.isFormValid = this.formDataService.idFormValid();
+    console.log('Result feature loaded!');
+  }
+
+  submit() {
+    alert('Excellent Job!');
+    this.formData = this.formDataService.resetFormData();
+    this.isFormValid = false;
+  }
 }
