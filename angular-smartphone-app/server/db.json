@@ -1,0 +1,39 @@
+{
+  "devices": [
+    {
+      "label": "One Plus 8",
+      "os": "android",
+      "price": 750,
+      "rate": 3,
+      "memory": 7400,
+      "desc": "One Plus 5 is a flagship phone...",
+      "id": 2
+    },
+    {
+      "label": "IPhone 7 +",
+      "os": "ios",
+      "price": 700,
+      "rate": 3,
+      "memory": 3000,
+      "desc": "",
+      "id": 24
+    },
+    {
+      "label": "Nokia 6600",
+      "os": "others",
+      "price": 99,
+      "rate": 3,
+      "desc": "Amazing Device bla bla \n",
+      "id": 26
+    },
+    {
+      "label": "Samsung J5",
+      "price": 110,
+      "os": "android",
+      "id": 27
+    }
+  ],
+  "login": {
+    "token": "efoiwejo32r32-fake-token"
+  }
+}
