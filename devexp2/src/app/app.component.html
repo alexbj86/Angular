@@ -1,0 +1,7 @@
+<div *ngFor="let u of utenti">
+  <app-utente [user]="u" *ngIf="u.eta >= 18"></app-utente>
+  <div *ngIf="u.eta < 18">Utente {{u.nome}} non visualizzato completamente perchè minorenne</div>
+</div>
+
+
+
