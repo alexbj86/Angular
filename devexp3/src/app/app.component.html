@@ -1,0 +1,10 @@
+<button (click)="mostraCognomiUtenti = !mostraCognomiUtenti">Mostra/Nascondi cognomi</button>
+Mostra cognomi: {{mostraCognomiUtenti}}
+<div *ngFor="let u of utenti">
+  <app-utente [user]="u" [mostraCognome]="mostraCognomiUtenti" ></app-utente>
+</div>
+
+<div *ngFor="let u of utenti">
+  <app-utente [user]="u" *ngIf="u.eta >= 18"></app-utente>
+  <div *ngIf="u.eta < 18">Utente {{u.nome}} non visualizzato completamente perchè minorenne</div>
+</div>

@@ -1,5 +1,5 @@
 <div>
   <span [class.grassetto]='user.eta > 30' [ngStyle]="user">Nome: {{user.nome}}</span><br>
-  Cognome: {{user.cognome}}<br>
+  <span *ngIf="mostraCognome">Cognome: {{user.cognome}}</span><br>
   Eta: {{user.eta}}
 </div>

@@ -10,6 +10,9 @@ export class UtenteComponent implements OnInit {
   @Input()
   user: Utente;
 
+  @Input()
+  mostraCognome: boolean;
+
   constructor() { }
 
   ngOnInit() {

@@ -16,7 +16,5 @@ export class AppComponent {
     {nome: "Be", cognome: "Ca", eta: 6,  color: "80ffb0"}
   ]
 
-  constructor() {
-   // this.utenti = this.utenti.filter(u => u.eta >=18)
-  }
+  mostraCognome = true;
 }
