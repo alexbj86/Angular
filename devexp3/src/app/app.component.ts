@@ -17,4 +17,8 @@ export class AppComponent {
   ]
 
   mostraCognome = true;
+
+  utente = {
+    nome: "Sa"
+  }
 }
