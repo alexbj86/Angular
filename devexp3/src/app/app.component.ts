@@ -21,4 +21,6 @@ export class AppComponent {
   utente = {
     nome: "Sa"
   }
+
+  distruggi = true;
 }

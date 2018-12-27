@@ -8,6 +8,7 @@ import { UppercaserComponent } from './uppercaser/uppercaser.component';
 import { LowercaserComponent } from './lowercaser/lowercaser.component';
 import { PanelComponent } from './panel/panel.component';
 import { Panel2Component } from './panel2/panel2.component';
+import { TestCicloComponent } from './test-ciclo/test-ciclo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Panel2Component } from './panel2/panel2.component';
     UppercaserComponent,
     LowercaserComponent,
     PanelComponent,
-    Panel2Component
+    Panel2Component,
+    TestCicloComponent
   ],
   imports: [
     BrowserModule,
